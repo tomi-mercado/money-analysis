@@ -1,0 +1,13 @@
+.card-projection{border-top:1px solid var(--line);margin-top:20px;padding-top:20px}
+.section-head:has(+ .card-projection){display:none}
+.projection-heading,.projection-detail-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.projection-heading h3,.projection-detail-heading h3{margin:0 0 5px}
+.projection-chart{display:grid;grid-template-columns:repeat(18,minmax(48px,1fr));align-items:end;gap:6px;min-height:245px;margin:24px 0;padding:18px 8px 0;border-bottom:1px solid var(--line);overflow-x:auto}
+.projection-month{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:5px;min-width:48px;height:225px;background:transparent;color:var(--muted);padding:0 3px;border-radius:9px 9px 0 0}
+.projection-month:hover,.projection-month.selected{background:var(--accent-soft);color:var(--ink)}
+.projection-month strong{font-size:11px;text-transform:capitalize}.projection-month small{font-size:10px}
+.projection-value{font-size:9px;white-space:nowrap;min-height:13px;transform:rotate(-45deg);transform-origin:center bottom;margin-bottom:4px}
+.projection-bar-track{display:flex;align-items:flex-end;justify-content:center;width:22px;height:150px}.projection-bar-track i{display:block;width:100%;min-height:3px;border-radius:5px 5px 0 0;background:linear-gradient(180deg,#7d8cf6,var(--accent))}.projection-month.selected .projection-bar-track i{background:linear-gradient(180deg,#5269ed,#25366c)}
+.projection-detail{border-top:1px solid var(--line);padding-top:20px}.projection-detail-heading>strong{font:700 22px 'Space Grotesk'}
+.projection-detail-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:18px 0}.projection-detail-groups>div{display:flex;flex-direction:column;gap:5px;padding:12px;background:#f8f9fc;border-radius:9px}.projection-detail-groups strong{font:600 16px 'Space Grotesk'}
+@media(max-width:600px){.projection-heading,.projection-detail-heading{display:block}.projection-heading .pill,.projection-detail-heading>strong{display:inline-block;margin-top:10px}.projection-chart{margin-left:-8px;margin-right:-8px}}

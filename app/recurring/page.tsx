@@ -1,0 +1,1 @@
+"use client"; import { RecurringView } from "../views"; export default function Page(){return <RecurringView/>}

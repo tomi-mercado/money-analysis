@@ -1,0 +1,1 @@
+"use client"; import { PaymentMethodsWorkspace } from "../PaymentMethodsWorkspace"; import { ColorSettings } from "../../components/ColorSettings"; export default function Page(){return <><PaymentMethodsWorkspace/><ColorSettings kind="paymentMethods"/></>}

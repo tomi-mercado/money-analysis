@@ -1,0 +1,1 @@
+"use client"; import { BudgetsView } from "../views"; import { ColorSettings } from "../../components/ColorSettings"; export default function Page(){return <><BudgetsView/><ColorSettings kind="budgets"/></>}

@@ -1,0 +1,1 @@
+"use client"; import { RatesView } from "../views"; export default function Page(){return <RatesView/>}

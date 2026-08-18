@@ -1,0 +1,1 @@
+"use client"; import { TransactionView } from "../views"; export default function Page(){return <TransactionView/>}
